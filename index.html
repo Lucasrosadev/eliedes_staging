@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliedes Restaurante</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero" id="topo">
+    <div class="hero-top anim-fade-down">
+      <h1 class="logo">Eliedes</h1>
+      <p class="sublogo">Restaurante</p>
+    </div>
+
+    <div class="hero-banner anim-zoom-in">
+      <img src="./img/banner.jpg" alt="Banner Eliedes Restaurante" class="banner-img">
+
+      <nav class="hero-nav">
+        <a href="#cardapio" class="btn-pill">CARDÁPIO</a>
+        <a href="#sobre" class="btn-pill">SOBRE NÓS</a>
+        <a href="#contatos" class="btn-pill">CONTATOS</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- CARDÁPIO -->
+    <section class="sec-cardapio" id="cardapio">
+
+      <div class="cardapio-header">
+        <h2 class="titulo anim-on-scroll">No<br>Cardápio</h2>
+        <button class="btn-ver-tudo anim-on-scroll" id="btnVerTudo">VER TUDO</button>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card-produto anim-on-scroll" data-produto="carne de porco">
+          <img src="./img/carne-de-porco.jpg" alt="carne de porco">
+          <div class="card-texto">
+            <h3>Carne de Porco</h3>
+            <p>Com muito sabor e no ponto<br>que você escolher</p>
+          </div>
+        </article>
+
+        <article class="card-produto anim-on-scroll" data-produto="strogonoff">
+          <img src="./img/strogonoff_de_frango.jpg" alt="strogonoff">
+          <div class="card-texto">
+            <h3>strogonoff</h3>
+            <p>Com aquele molho que não dá<br>para recusar</p>
+          </div>
+        </article>
+
+        <article class="card-produto anim-on-scroll" data-produto="bife">
+          <img src="./img/bife.jpeg" alt="bife">
+          <div class="card-texto">
+            <h3>Bife</h3>
+            <p>Bife suculento com arroz,<br>feijão e fritas.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- GRID DE BAIXO (VER TUDO) -->
+      <div class="grid grid-4" id="gridBaixo">
+        <article class="card-produto anim-on-scroll" data-produto="moqueca de peixe">
+          <img src="./img/moqueca-de-ensopado-de-peixe.jpg" alt="moqueca de peixe">
+          <div class="card-texto card-texto-verde">
+            <h3>Moqueca de peixe</h3>
+            <p>Peixe bem temperado com molho <br>cremoso e arroz.</p>
+          </div>
+        </article>
+
+        <article class="card-produto anim-on-scroll" data-produto="panqueca">
+          <img src="./img/panqueca.jpeg" alt="panqueca">
+          <div class="card-texto card-texto-verde">
+            <h3>Panqueca</h3>
+            <p>Panqueca recheada com <br>molho e queijo.</p>
+          </div>
+        </article>
+
+        <article class="card-produto anim-on-scroll" data-produto="filé de frango">
+          <img src="./img/file-de-frango.jpeg" alt="filé de frango">
+          <div class="card-texto card-texto-verde">
+            <h3>Filé de frango</h3>
+            <p>Frango grelhado com arroz,<br> feijão e fritas.</p>
+          </div>
+        </article>
+
+        <article class="card-produto anim-on-scroll" data-produto="feijoada">
+          <img src="./img/feijoada.jpg" alt="feijoada">
+          <div class="card-texto card-texto-verde">
+            <h3>Feijoada</h3>
+            <p>Feijoada completa, bem servida<br> e saborosa.</p>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+    <section class="sec-sobre" id="sobre">
+      <div class="sobre-container">
+        <div class="sobre-img anim-on-scroll">
+          <img src="./img/banner.jpg" alt="Prato Eliedes">
+        </div>
+
+        <div class="sobre-texto anim-on-scroll">
+          <h2>Sobre nós</h2>
+          <p>
+            Servimos pratos deliciosos e<br>
+            com aquele gostinho caseiro<br>
+            desde ***. Nossa missão é<br>
+            trazer sorrisos a cada mordida.<br>
+            Se mime com uma de nossas<br>
+            deliciosas refeições!
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- CONTATOS -->
+  <footer class="footer" id="contatos">
+    <h2 class="anim-on-scroll">Fale conosco</h2>
+
+    <div class="contatos">
+      <a class="contato-item anim-on-scroll"
+         href="https://instagram.com/eliedesrestauranteebuffet"
+         target="_blank" rel="noopener noreferrer">
+        <span class="contato-titulo">instagram</span>
+        <span class="contato-desc">@eliedesrestauranteebuffet</span>
+      </a>
+
+      <a class="contato-item anim-on-scroll"
+         href="https://wa.me/5517997370884?text=Olá!%20Gostaria%20de%20mais%20informações."
+         target="_blank" rel="noopener noreferrer">
+        <span class="contato-titulo">whatsapp</span>
+        <span class="contato-desc">(17) 997370884</span>
+      </a>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #a7b95a;
+  color: #111;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  padding: 30px 20px 40px;
+}
+
+.hero-top {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  font-size: 52px;
+  font-weight: 700;
+  font-family: "Georgia", serif;
+  letter-spacing: 1px;
+}
+
+.sublogo {
+  margin-top: -6px;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.95;
+}
+
+.hero-banner {
+  max-width: 920px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.20);
+}
+
+.banner-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-nav {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-pill {
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+  transition: 0.25s ease;
+}
+
+.btn-pill:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: #fff;
+}
+
+/* CARDÁPIO */
+.sec-cardapio {
+  width: 100%;
+  padding: 30px 20px 40px;
+  background: #fff;
+}
+
+.cardapio-header {
+  max-width: 1000px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.titulo {
+  font-family: "Georgia", serif;
+  font-size: 48px;
+  line-height: 1.0;
+}
+
+.btn-ver-tudo {
+  border: none;
+  background: #111;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-ver-tudo:hover {
+  transform: translateY(-3px);
+  opacity: 0.95;
+}
+
+/* GRID */
+.grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 22px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 35px;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* CARD */
+.card-produto {
+  background: #f3f3f3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: 0.25s ease;
+  transform: translateY(0);
+}
+
+.card-produto:hover {
+  transform: translateY(-7px) scale(1.02);
+}
+
+.card-produto img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-texto {
+  padding: 12px 12px 14px;
+  text-align: center;
+  background: #a7b95a;
+}
+
+.card-texto h3 {
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.card-texto p {
+  font-size: 12px;
+  opacity: 0.95;
+  line-height: 1.2;
+}
+
+.card-texto-verde {
+  background: #a7b95a;
+}
+
+/* SOBRE */
+.sec-sobre {
+  padding: 45px 20px;
+  background: #a7b95a;
+}
+
+.sobre-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.sobre-img img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.sobre-texto h2 {
+  font-family: "Georgia", serif;
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.sobre-texto p {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+/* FOOTER */
+.footer {
+  padding: 50px 20px 70px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.footer h2 {
+  font-family: "Georgia", serif;
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+.contato-item {
+  text-decoration: none;
+  color: #111;
+  background: rgba(255,255,255,0.15);
+  padding: 12px 18px;
+  border-radius: 14px;
+  min-width: 280px;
+  transition: 0.25s ease;
+}
+
+.contato-item:hover {
+  background: rgba(255,255,255,0.28);
+  transform: translateY(-3px);
+}
+
+.contato-titulo {
+  display: block;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.contato-desc {
+  display: block;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* ========================= */
+/* ANIMAÇÕES */
+/* ========================= */
+
+.anim-fade-down {
+  animation: fadeDown 0.9s ease both;
+}
+
+.anim-zoom-in {
+  animation: zoomIn 0.9s ease both;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* animação ao aparecer no scroll (JS ativa) */
+.anim-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: 0.7s ease;
+}
+
+.anim-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sobre-container {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+
+  .sobre-texto h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-img {
+    height: 220px;
+  }
+
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo {
+    font-size: 34px;
+  }
+
+  .footer h2 {
+    font-size: 34px;
+  }
+}
+
+/* Grid inferior começa escondido */
+#gridBaixo {
+  display: none;
+}
